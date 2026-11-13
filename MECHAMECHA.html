@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi presentación personal</title>
+    <link rel="icon" type="image/png" href="Knuckles_icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-principal: #263238;
+            --color-secundario: #607d8b;
+            --color-acento: #b39ddb;
+            --color-fondo: #f4f1fa;
+            --color-texto: #333333;
+        }
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+        }
+        header {
+            background-color: var(--color-principal);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        h1, h2 {
+            font-family: 'Poppins', sans-serif;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            color: var(--color-principal);
+        }
+        p, li, label, input, select, textarea, button {
+            font-size: 1rem;
+        }
+        main {
+            max-width: 50rem;
+            margin: 2rem auto;
+            padding: 1.5rem;
+        }
+        section {
+            background-color: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 0.75rem;
+        }
+        img {
+            width: 8rem;
+            height: auto;
+            border-radius: 50%;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.7rem;
+            margin: 0.5rem 0 1rem;
+            border: 0.1rem solid #cccccc;
+            border-radius: 0.4rem;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: var(--color-secundario);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 0.4rem;
+            cursor: pointer;
+        }
+        footer {
+            background-color: var(--color-principal);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .fila {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+}
+.mini-tarjeta {
+flex: 1 1 180px;
+padding: 1.25rem;
+background-color: var(--fondo);
+border-radius: 12px;
+}
+.mini-tarjeta h3 {
+margin-top: 0;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="menu">
+    <ul>
+     <li><a href="#sobre-mi">Sobre mí</a></li>
+     <li><a href="#habilidades">Habilidades</a></li>
+     <li><a href="#servicios">Servicios</a></li>
+     <li><a href="#formacion">Formación</a></li>
+     <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+        <h1>¡Hola! Soy Fabrizio</h1>
+        <p>Bienvenido a mi presentación personal</p>
+        <img src="noli.gif" alt="Fotografía personal de Fabrizio">
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Sobre mí</h2>
+            <p>Hola, soy Fabrizio, soy de Lima y actualmente estoy estudiando. Me interesa la tecnología y aprender cosas nuevas.</p>
+        </section>
+
+        <section>
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Conocimientos básicos de HTML.</li>
+                <li>Conocimientos básicos de Python.</li>
+                <li>Trabajo en equipo.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Formación</h2>
+            <ul>
+                <li>Estudios de educación secundaria.</li>
+                <li>Aprendizaje de programación y tecnología.</li>
+                <li>Y ingles intermedio.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Mis metas</h2>
+            <ol>
+                <li>Mejorar mis conocimientos de programación.</li>
+                <li>Terminar mis estudios.</li>
+                <li>Convertirme en un buen profesional.</li>
+                <li>Ser mejor persona</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Contacto</h2>
+
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="asunto">Asunto:</label>
+                <select id="asunto" name="asunto">
+                    <option value="consulta">Consulta</option>
+                    <option value="propuesta">Propuesta</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        <section class="tarjeta" id="servicios">
+                <h2>Lo que puedo hacer</h2>
+                    <div class="fila">
+                    <article class="mini-tarjeta"><h3>Páginas web</h3><p>Sitios informativos claros y ordenados.</p></article>
+                    <article class="mini-tarjeta"><h3>Diseño adaptable</h3><p>Páginas que se ven bien en el celular.</p></article>
+                <article class="mini-tarjeta"><h3>Mantenimiento</h3><p>Actualización de textos e imágenes.</p></article>
+                    </div>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Mi presentación personal</p>
+    </footer>
+
+</body>
+</html>
