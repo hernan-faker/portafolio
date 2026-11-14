@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi presentación personal</title>
+
+    <link rel="icon" type="image/png" href="img/Knuckles_icon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <h1>¡Hola! Soy Fabrizio</h1>
+        <p>Bienvenido a mi presentación personal</p>
+        <img src="img/noli.gif" alt="Fotografía personal de Fabrizio">
+    </header>
+
+    <main>
+
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy Fabrizio, soy de Lima y actualmente estoy estudiando. Me interesa la tecnología y aprender cosas nuevas.</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Conocimientos básicos de HTML.</li>
+                <li>Conocimientos básicos de Python.</li>
+                <li>Trabajo en equipo.</li>
+            </ul>
+        </section>
+
+        <section id="formacion">
+            <h2>Formación</h2>
+            <ul>
+                <li>Estudios de educación secundaria.</li>
+                <li>Aprendizaje de programación y tecnología.</li>
+                <li>Y ingles intermedio.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Mis metas</h2>
+            <ol>
+                <li>Mejorar mis conocimientos de programación.</li>
+                <li>Terminar mis estudios.</li>
+                <li>Convertirme en un buen profesional.</li>
+                <li>Ser mejor persona</li>
+            </ol>
+        </section>
+
+        <section class="tarjeta" id="servicios">
+            <h2>Lo que puedo hacer</h2>
+
+            <div class="fila">
+                <article class="mini-tarjeta">
+                    <h3>Páginas web</h3>
+                    <p>Sitios informativos claros y ordenados.</p>
+                </article>
+
+                <article class="mini-tarjeta">
+                    <h3>Diseño adaptable</h3>
+                    <p>Páginas que se ven bien en el celular.</p>
+                </article>
+
+                <article class="mini-tarjeta">
+                    <h3>Mantenimiento</h3>
+                    <p>Actualización de textos e imágenes.</p>
+                </article>
+
+                <article class="mini-tarjeta">
+                    <h3>Soporte básico</h3>
+                    <p>Ayuda con problemas sencillos de páginas web.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="asunto">Asunto:</label>
+                <select id="asunto" name="asunto">
+                    <option value="consulta">Consulta</option>
+                    <option value="propuesta">Propuesta</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Mi presentación personal</p>
+    </footer>
+
+</body>
+</html>
